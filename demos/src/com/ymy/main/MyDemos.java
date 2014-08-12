@@ -58,7 +58,7 @@ public class MyDemos extends ListActivity{
         String [] prefixPath=null;
         String prefixwithslash=prefix;
         if(prefix.equals("")){
-        	prefixwithslash=null;
+        	prefixPath=null;
         }
         else{
         	prefixPath=prefix.split("/");

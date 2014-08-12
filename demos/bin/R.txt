@@ -99,6 +99,7 @@ int attr spinnerMode 0x7f01004e
 int attr spinnerStyle 0x7f010053
 int attr subtitle 0x7f010025
 int attr subtitleTextStyle 0x7f010027
+int attr text 0x7f01006a
 int attr textAllCaps 0x7f010069
 int attr textAppearanceLargePopupMenu 0x7f010010
 int attr textAppearanceListItem 0x7f01001f
@@ -106,7 +107,9 @@ int attr textAppearanceListItemSmall 0x7f010020
 int attr textAppearanceSearchResultSubtitle 0x7f010063
 int attr textAppearanceSearchResultTitle 0x7f010062
 int attr textAppearanceSmallPopupMenu 0x7f010011
+int attr textColor 0x7f01006b
 int attr textColorSearchUrl 0x7f010064
+int attr textSize 0x7f01006c
 int attr title 0x7f010021
 int attr titleTextStyle 0x7f010026
 int attr windowActionBar 0x7f010000
@@ -242,11 +245,14 @@ int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
 int id button 0x7f05003d
+int id changedatebtn 0x7f05003f
+int id changetimebtn 0x7f050040
 int id checkbox 0x7f05002d
 int id collapseActionView 0x7f05000d
 int id default_activity_button 0x7f050028
 int id dialog 0x7f05000e
 int id disableHome 0x7f050008
+int id display 0x7f05003e
 int id dropdown 0x7f05000f
 int id edit_query 0x7f050030
 int id end 0x7f050013
@@ -284,6 +290,7 @@ int id showTitle 0x7f050006
 int id split_action_bar 0x7f05001e
 int id submit_area 0x7f050039
 int id tabMode 0x7f050002
+int id timepicker 0x7f050041
 int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id up 0x7f050021
@@ -314,7 +321,10 @@ int layout abc_popup_menu_item_layout 0x7f030014
 int layout abc_search_dropdown_item_icons_2line 0x7f030015
 int layout abc_search_view 0x7f030016
 int layout animation1 0x7f030017
-int layout support_simple_spinner_dropdown_item 0x7f030018
+int layout customviews 0x7f030018
+int layout datetimewidget1 0x7f030019
+int layout datetimewidget2 0x7f03001a
+int layout support_simple_spinner_dropdown_item 0x7f03001b
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
 int string abc_action_menu_overflow_description 0x7f0a0003
@@ -502,6 +512,10 @@ int styleable ActivityChooserView_expandActivityOverflowButtonDrawable 1
 int styleable ActivityChooserView_initialActivityCount 0
 int[] styleable CompatTextView { 0x7f010069 }
 int styleable CompatTextView_textAllCaps 0
+int[] styleable LabelView { 0x7f01006a, 0x7f01006b, 0x7f01006c }
+int styleable LabelView_text 0
+int styleable LabelView_textColor 1
+int styleable LabelView_textSize 2
 int[] styleable LinearLayoutICS { 0x7f01002a, 0x7f010051, 0x7f010052 }
 int styleable LinearLayoutICS_divider 0
 int styleable LinearLayoutICS_dividerPadding 2

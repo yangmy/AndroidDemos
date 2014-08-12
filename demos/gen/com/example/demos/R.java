@@ -695,6 +695,14 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int subtitleTextStyle=0x7f010027;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text=0x7f01006a;
         /**  Present the text in ALL CAPS. This may use a small-caps form when available. 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -731,6 +739,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int textAppearanceSmallPopupMenu=0x7f010011;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColor=0x7f01006b;
         /**  Text color for urls in search suggestions, used by things like global search 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -738,6 +755,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int textColorSearchUrl=0x7f010064;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textSize=0x7f01006c;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -992,11 +1019,14 @@ containing a value of this type.
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int button=0x7f05003d;
+        public static final int changedatebtn=0x7f05003f;
+        public static final int changetimebtn=0x7f050040;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
+        public static final int display=0x7f05003e;
         public static final int dropdown=0x7f05000f;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
@@ -1034,6 +1064,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
+        public static final int timepicker=0x7f050041;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1090,7 +1121,10 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int animation1=0x7f030017;
-        public static final int support_simple_spinner_dropdown_item=0x7f030018;
+        public static final int customviews=0x7f030018;
+        public static final int datetimewidget1=0x7f030019;
+        public static final int datetimewidget2=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1959,6 +1993,68 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.example.demos:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
+        /** Attributes that can be used with a LabelView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LabelView_text com.example.demos:text}</code></td><td></td></tr>
+           <tr><td><code>{@link #LabelView_textColor com.example.demos:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #LabelView_textSize com.example.demos:textSize}</code></td><td></td></tr>
+           </table>
+           @see #LabelView_text
+           @see #LabelView_textColor
+           @see #LabelView_textSize
+         */
+        public static final int[] LabelView = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.demos.R.attr#text}
+          attribute's value can be found in the {@link #LabelView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.demos:text
+        */
+        public static final int LabelView_text = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.demos.R.attr#textColor}
+          attribute's value can be found in the {@link #LabelView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.demos:textColor
+        */
+        public static final int LabelView_textColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.demos.R.attr#textSize}
+          attribute's value can be found in the {@link #LabelView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.demos:textSize
+        */
+        public static final int LabelView_textSize = 2;
         /** Attributes that can be used with a LinearLayoutICS.
            <p>Includes the following attributes:</p>
            <table>

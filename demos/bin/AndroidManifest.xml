@@ -28,6 +28,33 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"></category>
             </intent-filter>
         </activity>
+        
+        <activity android:name="com.ymy.views.CusotmViews"
+            	android:label="views/CustomViews"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        
+          <activity android:name="com.ymy.views.DateTimewidgets"
+            	android:label="views/datewidgets/dateTiemDialog"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        
+             <activity android:name="com.ymy.views.DateTimeWidgets2"
+            	android:label="views/datewidgets/inline"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
