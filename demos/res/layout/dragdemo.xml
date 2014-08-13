@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:my="http://schemas.android.com/apk/res/com.example.demos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <com.ymy.views.DragableDot 
+        android:id="@+id/dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        my:radius="100dp"
+        android:padding="15dp"
+        my:legend="dot1"
+        />
+
+    <com.ymy.views.DragableDot
+        android:id="@+id/dot2" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        my:radius="100dp"
+        android:padding="15dp"
+        android:layout_toRightOf="@id/dot1"
+        my:legend="dot2"
+        />
+    
+    <com.ymy.views.DragableDot 
+        android:id="@+id/dot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        my:radius="100dp"
+        android:padding="15dp"
+        android:layout_below="@id/dot1"
+        my:legend="dot3"
+        />
+</RelativeLayout>

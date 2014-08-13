@@ -4,7 +4,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="21" />
 
     <application
@@ -49,6 +49,14 @@
         
              <activity android:name="com.ymy.views.DateTimeWidgets2"
             	android:label="views/datewidgets/inline"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+          <activity android:name="com.ymy.views.DragDemo"
+            	android:label="views/drag/demo1"
             >
             <intent-filter >
                 <action android:name="android.intent.action.MAIN"/>

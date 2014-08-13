@@ -29,7 +29,6 @@ public class LabelViews extends View{
 		initView();
 		
 		TypedArray t=context.obtainStyledAttributes(attrs,R.styleable.LabelView);
-		
 		CharSequence s=t.getString(R.styleable.LabelView_text);
 		setText(s.toString());
 	}
