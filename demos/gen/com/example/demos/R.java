@@ -1068,7 +1068,8 @@ containing a value of this type.
         public static final int et=0x7f05003e;
         public static final int expand_activities_button=0x7f050028;
         public static final int expanded_menu=0x7f05002e;
-        public static final int gridView=0x7f050047;
+        public static final int gallery=0x7f050047;
+        public static final int gridView=0x7f050048;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002c;
@@ -1163,8 +1164,9 @@ containing a value of this type.
         public static final int datetimewidget1=0x7f03001a;
         public static final int datetimewidget2=0x7f03001b;
         public static final int dragdemo=0x7f03001c;
-        public static final int grid1=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int gallery1=0x7f03001d;
+        public static final int grid1=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
