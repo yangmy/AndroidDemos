@@ -90,7 +90,7 @@ public class Grid1 extends Activity{
 		@Override
 		public void setChecked(boolean checked) {
 			mChecked=checked;
-			setBackground(checked?getResources().getDrawable(R.drawable.blue):null);
+			setBackgroundDrawable(checked?getResources().getDrawable(R.drawable.blue):null);
 		}
 
 		@Override
