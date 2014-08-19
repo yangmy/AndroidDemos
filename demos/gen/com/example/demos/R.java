@@ -1084,6 +1084,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f050031;
+        public static final int search=0x7f05004a;
         public static final int search_badge=0x7f050034;
         public static final int search_bar=0x7f050033;
         public static final int search_button=0x7f050035;
@@ -1101,6 +1102,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f050020;
         public static final int submit_area=0x7f05003b;
         public static final int tabMode=0x7f050002;
+        public static final int textView=0x7f050049;
         public static final int thumbnail=0x7f05001a;
         public static final int timepicker=0x7f050043;
         public static final int title=0x7f05002d;
@@ -1166,7 +1168,11 @@ containing a value of this type.
         public static final int dragdemo=0x7f03001c;
         public static final int gallery1=0x7f03001d;
         public static final int grid1=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int searchaction=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+    }
+    public static final class menu {
+        public static final int searchaction=0x7f0c0000;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

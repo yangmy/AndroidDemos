@@ -283,6 +283,7 @@ int id normal 0x7f050000
 int id progress_circular 0x7f050018
 int id progress_horizontal 0x7f050019
 int id radio 0x7f050031
+int id search 0x7f05004a
 int id search_badge 0x7f050034
 int id search_bar 0x7f050033
 int id search_button 0x7f050035
@@ -300,6 +301,7 @@ int id showTitle 0x7f050006
 int id split_action_bar 0x7f050020
 int id submit_area 0x7f05003b
 int id tabMode 0x7f050002
+int id textView 0x7f050049
 int id thumbnail 0x7f05001a
 int id timepicker 0x7f050043
 int id title 0x7f05002d
@@ -339,7 +341,9 @@ int layout datetimewidget2 0x7f03001b
 int layout dragdemo 0x7f03001c
 int layout gallery1 0x7f03001d
 int layout grid1 0x7f03001e
-int layout support_simple_spinner_dropdown_item 0x7f03001f
+int layout searchaction 0x7f03001f
+int layout support_simple_spinner_dropdown_item 0x7f030020
+int menu searchaction 0x7f0c0000
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
 int string abc_action_menu_overflow_description 0x7f0a0003

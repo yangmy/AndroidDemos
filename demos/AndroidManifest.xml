@@ -89,6 +89,14 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
+            <activity android:name="com.ymy.views.SearchActionBar"
+            	android:label="views/search/searchactionbar"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
